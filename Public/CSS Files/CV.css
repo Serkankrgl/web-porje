@@ -1,0 +1,21 @@
+.profile-img{
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    margin:4px ;
+    
+}
+table{
+    background-color: #19181a;
+    width: 85%;
+    margin: auto;
+    color: snow;
+}
+.container{
+    background-color: #19181a;
+    color: snow;
+}
+.title{
+    text-align: center;
+}
+

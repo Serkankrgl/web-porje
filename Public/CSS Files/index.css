@@ -1,0 +1,21 @@
+
+.info-Box{
+    background-color: #19181a;
+    color: snow;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.info-img{
+    
+    width: 100%;
+    
+}
+.Box{
+    
+    margin:auto;
+    text-align: center;
+    font-size: 24px;
+    
+}

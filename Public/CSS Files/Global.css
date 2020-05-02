@@ -1,0 +1,45 @@
+/*Global CSS*/
+*{
+    color: snow;
+}
+body{
+    margin: auto;
+    background-color: #4d4d4d;
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    background-color:  #19181a;
+    width: 100vw;
+}
+
+nav,section{
+    width: 85%;
+    margin: auto;
+}
+section{
+    margin-top: 10px;
+}
+hr{
+    background-color: snow;
+}
+p{
+    font-size: 20px;
+    color: snow;
+}
+a{
+    color: snow;
+}
+a:hover{
+    text-decoration:none;
+    color: #4d4d4d;
+}
+
+/*Nav-Bar Style*/
+.navbar-brand {
+    font-size: 32px;
+    color: snow;
+}
+.nav-link{
+    font-size: 20px;
+}
