@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="../Public/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Public/CSS Files/Global.css" type="text/css">
+    <link rel="stylesheet" href="../Public/CSS Files/Comunication.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../Public/Media/Logo.min.png">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>Serkan Kuruoğlu</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed top">
+            
+            <a class="navbar-brand" href="../src/index.html">
+                <img src="../Public/Media/Logo.jpg" width="50" height="50" class="d-inline-block align-top " alt="">
+                Serkan Kuruoğlu
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../src/index.html">Hakkımda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../src/CV.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../src/HomeTown.html">Memleketim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../src/Legacy.html">Mirasımız</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../src/Comunication.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../src/Login.html">Giriş Yap</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section >
+        <div class="container">
+            
+            <form id="frm" action="" method="POST">
+                <div class="row">
+                    <div class="col-md-6 box">
+                        
+                    </div>
+                    <div class="col-md-6 box">
+                            <div class="form-group">
+                                <input onblur="" name="name" type="text" id="Name" class="form-control" placeholder="İsim">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input onblur="" name="surname" type="text" id="Surname" class="form-control" placeholder="Soy İsim">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                
+                                <input onblur="" name="e-mail" type="email" id="E-mail" class="form-control" placeholder="E-Mail">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <select name="hometown" id="HomeTown" class="form-control" >
+                                    <option value="Eskişehir" selected >Eskişehir</option>
+                                    <option value="İstanbul">İstanbul</option>
+                                    <option value="Ankara">Ankara</option>
+                                    <option value="Sakarya">Sakarya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <h4>Cinsiyet</h4>
+                                <div class="form-radio">
+                                    <label class="ml-3" for="Male">
+                                        <input onblur="" id="Male" name="gender" type="radio" value="Male">Erkek
+                                    </label>
+                                    <label class="ml-3" for="Female">
+                                        <input onblur="" id="female" name="gender" type="radio" value="Kadın">Kadın
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>Sayfamı Nasıl Buldun</h4>
+                                <div class="row">
+                            <div  class="container">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="ways[]" value="recommendation" type="checkbox"> Tavsiye
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="ways[]" value="media" type="checkbox"> Medya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="ways[]" value="github" type="checkbox">GitHub
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="ways[]" value="linkedin" type="checkbox">Linkedin
+                                    </label>
+                                </div>
+                                    <textarea onblur="" name="message" id="Message" cols="50" rows="7" class="form-control" placeholder="Yorum Yapın"></textarea>
+                                </div>
+                            </div>
+                            <div class="container btns">
+                                <input class="btn btn-lg" type="submit" name="send" value="Send" onclick="clickEvent()">
+                                <input class="btn btn-lg" type="reset" value="Clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>

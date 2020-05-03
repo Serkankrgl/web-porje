@@ -1,0 +1,38 @@
+
+.form-control{
+    background-color: #19181a;
+    border-radius: 20px;
+    border: orange 3px solid;
+    color: snow;
+    padding-left: 15px;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    border: yellowgreen 3px solid;
+}
+.form-control::placeholder{
+    color: snow;
+}
+option{
+    background-color: orange;
+    color: snow;
+}
+
+.box{
+    padding-top: 30px;
+    border: 4px orange solid;
+    background-color: #19181a;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+.btns input{
+    background-color: #4d4d4d;
+    margin: 5px;
+}
+.btns input:hover{
+    background-color: orange;
+}
+

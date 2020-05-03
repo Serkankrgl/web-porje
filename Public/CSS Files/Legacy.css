@@ -1,0 +1,29 @@
+
+.btn {
+    width: 100%;
+    
+    font-weight: 900px;
+}
+.dropdown-menu{
+    width: 100%;
+    text-align: center;
+    background-color: #19181a;
+}
+.dropdown-item{
+    color: white;
+}
+
+.box {
+    background-color: #19181a;
+    padding: 10px;
+    
+    border-radius: 10px;
+}
+.box h3{
+    text-align: center;
+}
+.box-img {
+    width: 50%;
+    float: left;
+    border: 3px orange solid;
+}
