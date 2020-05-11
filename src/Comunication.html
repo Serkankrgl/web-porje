@@ -57,23 +57,41 @@
     <section >
         <div class="container">
             
-            <form id="frm" action="" method="POST">
+            <form id="form" action="../Public/php/Comunication.php" onsubmit="return clickEvent()" method="POST">
                 <div class="row">
                     <div class="col-md-6 box">
-                        
+                        <div  class="Box-info" >
+                            <div >
+                                <i class="fa fa-envelope"></i>
+                                
+                                <a href="mailto:Serkan.kuruoglu26@gmail.com">Serkan.kuruoglu26@gmail.com</a>
+                            </div>
+                            <br>
+                            <div>
+                                <i class="fa fa-github"></i>
+                                
+                                <a href="https://github.com/Serkankrgl">Serkankrglu</a>
+                            </div>
+                            <br>
+                            <div>
+                                <i class="fa fa-linkedin"></i>
+                                
+                                <a  href="https://www.linkedin.com/in/serkan-kuruo%C4%9Flu-624469177/">Serkan Kuruoğlu</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 box">
                             <div class="form-group">
-                                <input onblur="" name="name" type="text" id="Name" class="form-control" placeholder="İsim">
+                                <input  name="name" type="text" id="Name" class="form-control" placeholder="İsim">
                             </div>
                             <br>
                             <div class="form-group">
-                                <input onblur="" name="surname" type="text" id="Surname" class="form-control" placeholder="Soy İsim">
+                                <input  name="surname" type="text" id="Surname" class="form-control" placeholder="Soy İsim">
                             </div>
                             <br>
                             <div class="form-group">
                                 
-                                <input onblur="" name="e-mail" type="email" id="E-mail" class="form-control" placeholder="E-Mail">
+                                <input  name="e-mail" type="email" id="E-mail" class="form-control" placeholder="E-Mail">
                             </div>
                             <br>
                             <div class="form-group">
@@ -88,10 +106,10 @@
                                 <h4>Cinsiyet</h4>
                                 <div class="form-radio">
                                     <label class="ml-3" for="Male">
-                                        <input onblur="" id="Male" name="gender" type="radio" value="Male">Erkek
+                                        <input id="Male" name="Gender" type="radio" value="Male" checked>Erkek
                                     </label>
                                     <label class="ml-3" for="Female">
-                                        <input onblur="" id="female" name="gender" type="radio" value="Kadın">Kadın
+                                        <input id="female" name="Gender" type="radio" value="Kadın">Kadın
                                     </label>
                                 </div>
                             </div>
@@ -101,29 +119,29 @@
                             <div  class="container">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input name="ways[]" value="recommendation" type="checkbox"> Tavsiye
+                                        <input name="ways[]" id="ways" value="recommendation" type="checkbox"> Tavsiye
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input name="ways[]" value="media" type="checkbox"> Medya
+                                        <input name="ways[]" id="ways" value="media" type="checkbox"> Medya
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input name="ways[]" value="github" type="checkbox">GitHub
+                                        <input name="ways[]" id="ways" value="github" type="checkbox">GitHub
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input name="ways[]" value="linkedin" type="checkbox">Linkedin
+                                        <input name="ways[]" id="ways" value="linkedin" type="checkbox">Linkedin
                                     </label>
                                 </div>
-                                    <textarea onblur="" name="message" id="Message" cols="50" rows="7" class="form-control" placeholder="Yorum Yapın"></textarea>
+                                    <textarea name="message" id="Message" cols="50" rows="7" class="form-control" placeholder="Yorum Yapın"></textarea>
                                 </div>
                             </div>
                             <div class="container btns">
-                                <input class="btn btn-lg" type="submit" name="send" value="Send" onclick="clickEvent()">
+                                <input class="btn btn-lg" type="submit" name="send" value="Send" >
                                 <input class="btn btn-lg" type="reset" value="Clear">
                             </div>
                         </div>
@@ -132,4 +150,8 @@
             </form>
         </div>
     </section>
+    <footer class="card-footer">
+        &copy;2020 Serkan Kuruoğlu Web-Proje
+    </footer>
+    <script src="../Public/js/Comunication.js"></script>
 </body>

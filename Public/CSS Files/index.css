@@ -15,7 +15,18 @@
 .Box{
     
     margin:auto;
-    text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     
+}
+.info-Box a{
+    color: orange;
+}
+.info-Box a:hover{
+    
+    
+    color: snow;
+    
+}
+h3{
+    color: orange;
 }

@@ -35,4 +35,11 @@ option{
 .btns input:hover{
     background-color: orange;
 }
-
+.Box-info{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    text-align: center;
+}
+.Box-info i{
+    margin-right: 8px;
+}
